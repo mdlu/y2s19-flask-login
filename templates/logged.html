@@ -1,6 +1,19 @@
-
 <h1>
 Hi {{session['name']}}, you are logged in.
 </h1>
+
+<form action="/update_food" method="POST">
+
+	<input type="text" name="fav_food" placeholder="What's your Favorite food?">
+
+	<input type="submit" value="Submit">
+
+</form>
+<h1>
+	Your favorite food is {{session["fav_food"]}}
+</h1>
+
+
+
 
 <a href = "/logout"> Logout </a>
